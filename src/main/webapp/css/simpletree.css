@@ -1,0 +1,127 @@
+.treeview ul{ /*CSS for Simple Tree Menu*/
+margin: 0;
+padding: 0;
+}
+
+.treeview li{ /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+background: #FFFFCC url(../img/tree/folderclosedds.png) no-repeat left center;
+list-style-type: none;
+padding-left: 22px;
+margin-bottom: 3px;
+
+}
+
+.treeview li.subproject{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/subprojectclosed.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.submenu{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/folderclosed.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.appn{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/folderclosedappn.png) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+
+.treeview li.procurement{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/icoBlueFolderSm.png) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.director{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/directorfolder.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.budget{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/folderclosedds.png) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.distro{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/icoFolderMessagesClosed.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+
+
+.treeview li.fore{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/folderclosed.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+.treeview li.cont{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/folderclosedcont.png) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+
+
+
+.bLiYellow {
+	background-color: #FFFFCC
+}
+
+.tBlackSmallBld {
+	color: #000000;
+	font-family: verdana, helvetica, arial;
+	font-size: 10px;
+	font-weight: bold;
+}
+.tDkGray {
+	color: #666666;
+	font-family: verdana, helvetica, arial;
+	font-size: 11px;
+}
+.tDkGraySmall {
+	color: #666666;
+	font-family: verdana, helvetica, arial;
+	font-size: 10px;
+}
+
+.treeview li.submenu ul{ /*Style for ULs that are children of LIs (submenu) */
+display: none; /*Hide them by default. Don't delete. */
+}
+
+.treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
+cursor: default;
+}
+
+.treeview .submenu ul li.subproject{ /* Style for LI that contains sub lists (other ULs). */
+background: #FFFFCC url(../img/tree/subprojectclosed.gif) no-repeat left 1px;
+cursor: hand !important;
+line-height: 17px;
+cursor: pointer !important;
+
+}
+

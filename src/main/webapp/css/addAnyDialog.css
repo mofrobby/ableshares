@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+.divAddAnyDialog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100em;
+    z-index: 1000;
+   	background-image: url(../img/xln_rel_links_bg_lg.gif); 
+}

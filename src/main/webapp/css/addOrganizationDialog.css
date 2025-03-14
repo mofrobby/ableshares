@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+.divAddOrganizationDialog {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:62em;
+    height:46em;
+    margin-top: -23em; /*set to a negative number 1/2 of your height*/
+    margin-left: -31em; /*set to a negative number 1/2 of your width*/
+    border: 3px solid #ccc;
+	background-image:url(../img/xln_rel_links_bg_lg.gif); 
+	opacity: 0.9;
+	filter: alpha(opacity = 90); /* For IE8 and earlier */
+   /* background-color: #039; */
+   z-index: 1001;
+}

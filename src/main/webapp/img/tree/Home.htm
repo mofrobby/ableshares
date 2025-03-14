@@ -1,0 +1,57 @@
+<html>
+<title>Case Manager</title>
+<script language='javascript' src='jscripts/framer.js'></script>
+<script language='javascript'>
+<!--
+objHolder = new Holder();
+function Holder() {
+	//info for current state
+	this.folderId = 0;	//used by attach docs to select the current client folder.
+	this.compId = 0;		//pdfs will use this
+}
+
+objFramer = new Framer();
+//objF = objFramer.add('frames["fraTool"]', 'document.all.frsLower', 24, 132, true);
+//objF.addBlock('frames["fraTool"].document.all.divTitleWide', true);
+//objF.addBlock('frames["fraTool"].document.all.divTitleThin', false);
+//objF.addBlock('frames["fraTool"].document.all.tblSearch', true);
+
+
+objF = objFramer.add('frames["fraExplorer"]', 'document.all.frsLowerRight', 22, 172, false);
+objF.frameBorderOn = 'yes';
+objF.frameBorderOff = 'no';
+objF.frameSpacingOn = '4';
+objF.frameSpacingOff = '0';
+objF.borderOn = '1';
+objF.borderOff = '0';
+objF.addBlock('frames["fraExplorer"].document.all.divExplorer', true);
+//objF.addBlock('frames["fraExplorer"].document.all.divExplorerTabs', true);
+objF.addBlock('frames["fraExplorerBot"].document.all.divApplet', true);
+objF.addBlock('frames["fraExplorer"].document.all.divExplorerThin', false);
+objF.addBlock('frames["fraExplorerBot"].document.all.divExplorerThin', false);
+
+// -->
+</script>
+<frameset rows='90,*' frameborder=no framespacing=0 id='frsOuter'>
+	<frame src='header.html' name='fraHeader' marginheight=0 marginwidth=0
+		scrolling=no noresize>
+
+	<frameset cols='172,*' frameborder=yes framespacing=4
+		bordercolor="#022B47" id='frsLowerRight'>
+		<frameset rows='75,*' frameborder=no framespacing=0
+			id='frsExplorerMain'>
+			<frame src='top.html' name=fraExplorer marginheight=0 marginwidth=0
+				scrolling=no>
+			<frame src='explorer.html' name=fraExplorerBot marginheight=0
+				marginwidth=0 scrolling=no>
+		</frameset>
+		<frame src='Landing.html' name=fraBody marginheight=8 marginwidth=8
+			frameborder=no>
+	</frameset>
+
+</frameset>
+<noframes></noframes>
+
+</html>
+
+

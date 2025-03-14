@@ -1,0 +1,37 @@
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #CCCC99;
+}
+.table th {
+    font-weight: bold;
+}
+.table thead th {
+    height: 16px;
+    vertical-align: bottom;
+}
+.table caption + thead tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+.table-striped thead > tr > td, .table-striped thead > tr > th {
+    background-color: #FFFF99;
+}
+.table-yellow {
+    background-color: #FFFFCC;
+    /*bLiYellow*/
+}
+.table-striped.table-yellow tbody > tr:nth-child(2n+1) > td, .table-striped.table-yellow tbody > tr:nth-child(2n+1) > th {
+    background-color: #FFFFCC; /*bMidYellow*/
+}
+.table-striped.table-yellow tbody > tr:nth-child(even) > td, .table-striped.table-yellow tbody > tr:nth-child(even) > th {
+    background-color: #FBFBB9; /*bMidYellow*/
+}
+
+.ui-sortable .ui-icon-grip-solid-horizontal {
+  cursor: grab;
+  cursor: move;
+}
+
+.tDkGraySmall{text-decoration:none}

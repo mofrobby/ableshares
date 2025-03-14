@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- FONTAWESOME STYLES-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="../assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="../assets/css/indra_custom.css" rel="stylesheet" />
+    <link href="../assets/css/htsiCustom.css" rel="stylesheet" />
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    
+<script language='javascript'>
+<!--
+var
+var xmlRequest;
+if (window.XMLHttpRequest) { // if Mozilla, IE7, Safari etc
+    //alert("HTTP");
+    xmlRequest = new XMLHttpRequest();
+}
+else if (window.ActiveXObject) { // if IE6 or below
+    try {
+        xmlRequest = new ActiveXObject("Msxml2.XMLHTTP")
+        //alert("Msxml2.XMLHTTP");
+    }
+    catch (e) {
+        try {
+            xmlRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            //	alert("Microsoft.XMLHTTP");
+        }
+        catch (e) {
+            alert("You do not have a compatible browser to use this page.\r Use IE 6.0 or greater for best results.");
+        }
+    }
+}
+else
+    alert("You do not have a compatible browser to use this page.\r Use IE 6.0 or greater for best results.");
+
+
+// -->
+</script>
+<style>
+<!--
+.nocol {color:#000000; font-family:arial; font-size:13px; text-decoration:none;}
+
+a.disabled {
+	pointer-events: none;
+	cursor: default;
+}
+div.dropdown {
+    display: none;
+    position: absolute;
+}
+div.dropdown-item a {
+    padding: 10px;
+    background-color: #1E4b55;
+    display: block;
+    white-space: nowrap;
+}
+
+
+-->
+</style>
+
+</head>
+<body>
+
+<div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+           
+             <div style="color: white;padding: 5px 50px 5px 50px;float: left; font-size: 32px;"><img src="../assets/img/argos_sm.png">&nbsp;&nbsp;ARGOS PAI Toolkit</div>             
+            <div style="color: #ffffcc;padding: 5px 50px 5px 10px; float: left; font-size: 32px;"><u><b></b></u></div>
+          <div style="color: white; padding: 15px 50px 5px 50px; float: right;font-size: 16px;"> Last access : 2025-03-10 04:01:27.0 &nbsp; <a href="argos.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+        </nav>   
+           <!-- /. NAV TOP  -->
+                
+        
+        
+
+
+
+
+
+
+
+
+
+      <nav class="navbar-default navbar-side" role="navigation" id="bar" style="width: 260px; position:absolute;">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li id="imgLogo" class="text-center">
+                   <img src="../assets/img/ecs_logo.png" class="user-image img-responsive" data-toggle="tooltip" title="Click on logo to go to home page"/>
+				</li>
+				
+				
+				
+				
+				
+                	<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-star fa-2x" title="Organization Director"></i> PAI Tools</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-users fa-2x" title="Budget Director"></i> Community</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-tachometer fa-2x" title="Dashboards"></i> Dashboards</a>
+                    
+                    	
+                    
+                    	<ul class="nav nav-second-level">
+								<li>
+									<a href="rat_unit_summary.action?business_unit_id=1" target="fraBody">Rationalization Dashboard</a>
+								</li> 
+                        
+                        		
+								<li>
+									<a href="dashboard_detail.action?dashboard_id=2&action=view" target="fraBody">Directors Dashboard</a>
+								</li> 
+								
+								<li>
+									<a href="dashboard_detail.action?dashboard_id=1&action=view" target="fraBody">Portfolio Dashboard</a>
+								</li> 
+								
+								<li>
+									<a href="dashboard_detail.action?dashboard_id=6&action=view" target="fraBody">Processed Events</a>
+								</li> 
+								
+								<li>
+									<a href="dashboard_detail.action?dashboard_id=3&action=view" target="fraBody">Program Manager Dashboard</a>
+								</li> 
+								
+								<li>
+									<a href="dashboard_detail.action?dashboard_id=5&action=view" target="fraBody">Test Template 2</a>
+								</li> 
+								
+                        </ul>
+                  
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="home.action" target="fraBody"><i class="fa fa-book fa-2x" title="Business Units"></i> Library</a>
+                    
+                    	
+                    
+                  
+                  
+                  		<ul class="nav nav-second-level">
+                        
+ 		                                
+	                            <li>
+                       				<a href="rationalization_by_business_unit.action?directorateID=2" target="fraBody">Finance</a>
+	                                
+	                            </li>
+                    		            
+	                            <li>
+                       				<a href="rationalization_by_business_unit.action?directorateID=1" target="fraBody">Headquarters</a>
+	                                
+	                            </li>
+                    		            
+	                            <li>
+                       				<a href="rationalization_by_business_unit.action?directorateID=4" target="fraBody">Marketing</a>
+	                                
+	                            </li>
+                    		            
+	                            <li>
+                       				<a href="rationalization_by_business_unit.action?directorateID=5" target="fraBody">Operations</a>
+	                                
+	                            </li>
+                    		            
+	                            <li>
+                       				<a href="rationalization_by_business_unit.action?directorateID=3" target="fraBody">Warehousing</a>
+	                                
+	                            </li>
+                    		      
+                         	</ul>
+                  
+                  
+                   
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="get_app_portfolio" target="fraBody"><i class="fa fa-puzzle-piece fa-2x" title="Application Portfolios"></i> Analysis</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="get_app_inventory.action" target="fraBody"><i class="fa fa-files-o fa-2x" title="Application Inventory"></i> Repositories</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="reports.action" target="fraBody"><i class="fa fa-bar-chart-o fa-2x" title="Reports"></i> Reports</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="admin.action" target="fraBody"><i class="fa fa-sitemap fa-2x" title="Administration"></i> Platform</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+               
+				
+				
+                	<li>
+                        <a href="inbox.action" target="fraBody"><i class="fa fa-inbox fa-2x" title="Inbox"></i> Alerts</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                  <li>
+                        <a href="inbox.action" target="fraBody"><i class="fa fa-stack-exchange fa-2x" title="Help Desk"></i> Help Desk</a>
+                    
+                    	
+                    
+                  
+                  
+                   
+                    
+                  </li>
+                    
+                    
+                    
+                    <li class="bg-color-wrapper" style="height:48px;">
+                        <a href="javascript: minifyme();" class="pull-right" style="height:48px;"><i class="fa fa-arrow-circle-left" title="Collapse"></i></a>
+                    </li>
+                  	
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        
+         <nav class="navbar-default navbar-sideminify" role="navigation" id="clsbar" style="display: none; width: 60px; position: absolute;">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li id="imgLogo2" class="text-center">
+                    <img src="../assets/img/ecs_collapsed.png" class="user-image img-responsive" data-toggle="tooltip" title="Click on logo to go to home page"/>
+				</li>
+				
+              	
+              		<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-star fa-2x" title="PAI Tools"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-usd fa-2x" title="Community"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="directorView.action" target="fraBody"><i class="fa fa-tachometer fa-2x" title="Dashboards"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="home.action" target="fraBody"><i class="fa fa-sitemap fa-2x" title="Library"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="get_app_portfolio" target="fraBody"><i class="fa fa-folder-open-o fa-2x" title="Analysis"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="get_app_inventory.action" target="fraBody"><i class="fa fa-files-o fa-2x" title="Repositories"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="reports.action" target="fraBody"><i class="fa fa-bar-chart-o fa-2x" title="Reports"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="admin.action" target="fraBody"><i class="fa fa-desktop fa-2x" title="Platform"></i></a>
+                    </li>
+                    
+              
+              		<li>
+                        <a href="inbox.action" target="fraBody"><i class="fa fa-inbox fa-2x" title="Alerts"></i></a>
+                    </li>
+                    
+              	
+              
+      	
+                    <li class="bg-color-wrapper" style="height:48px;">
+                        <a href="javascript: maxafyme();" class="pull-right" style="height:48px;"><i class="fa fa-arrow-circle-right" title="Expand"></i></a>
+                    </li>
+                  	
+                </ul>
+               	
+            </div>
+            
+            
+        </nav> 
+        
+        
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+             <div style="background-color: #fff; height: 18px;">
+                      <div class="col-md-6">
+		             	<div style="text-align: left;">
+			             	  <ul id="bread" class="breadcrumb">
+								  
+							 </ul> 
+		             	</div>
+		             </div>
+		             <div class="col-md-6">
+		           		<div style="text-align: right; vertical-align:middle;">
+						 
+								Welcome&nbsp;&nbsp;<span id="user_profile"><a href="showProfile.action" target="fraBody">Argos Admin&nbsp;</a></span>!&nbsp;Logged&nbsp;as&nbsp;System Admin&nbsp;for&nbsp;Headquarters&nbsp;	
+		
+						</div>
+					</div>
+			</div>
+       			 <iframe id="fraBody" name="fraBody" src='argosframe.html' width="100%" height="4000px" scrolling="no" onLoad="updateBreadcrumbs();"></iframe>
+       			 
+        	 </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  Z-->
+        </div>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery-migrate.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.metisMenu.js"></script>
+<script src="../assets/js/custom.js"></script>  
+
+ <script>
+ 
+    $(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+	});
+    $(function () {
+    	ellipses1 = $("#bc1 :nth-child(2)")
+        if ($("#bc1 a:hidden").length >0) {ellipses1.show()} else {ellipses1.hide()}
+	});
+	
+    $('#imgLogo').click( function() {
+    	
+    	$('#fraBody').attr('src', 'directorView.action');
+    });
+    
+	$('#imgLogo2').click( function() {
+    	
+    	$('#fraBody').attr('src', 'directorView.action');
+    });
+    
+    
+    window.addEventListener('message', function(e) {
+    	var $iframe = jQuery("#fraBody");
+    	var eventName = e.data[0];
+    	var data = e.data[1];
+    	switch(eventName){
+    	case 'setHeight':
+    		$iframe.height(data);
+    		break;
+    	}
+    }, false);
+    
+function minifyme(){
+    	
+    	$('#bar').hide();
+    	$('#page-wrapper').css('margin', '0 0 0 60px');
+    	$('#clsbar').show();
+    }
+    
+function maxafyme(){
+    	$('#clsbar').hide();
+    	$('#page-wrapper').css('margin', '0 0 0 260px');
+    	$('#bar').show();
+    	
+    }
+
+function updateBreadcrumbs(){
+	xmlRequest.open("GET", "/CybrEPM/Ajax/GetBreadcrumbs.jsp", true);
+	xmlRequest.onreadystatechange = breadcrumbResult;
+	xmlRequest.send(null);	
+
+}
+
+function breadcrumbResult(){
+	if (xmlRequest.readyState == 4) {
+		var Re = xmlRequest.responseText;
+		//alert('Re '+Re);
+		$("#bread").html(Re);
+	}
+}
+    
+    </script>
+</body>
+
+
+</html>

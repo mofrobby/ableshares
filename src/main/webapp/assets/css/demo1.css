@@ -1,0 +1,59 @@
+
+/* canvas styles */
+
+/* draggable targets */
+[data-draggable="target"]
+{
+	float:left;
+	list-style-type:none;
+	
+	width:82%;
+	height:17.5em;
+	overflow-y:auto;
+	
+	margin:0 0.5em 0.5em 0;
+	padding:0.5em;
+	
+	border:2px solid #888;
+	border-radius:0.2em;
+	
+	background:#ddd;
+	color:#555;
+}
+
+/* draggable items */
+[data-draggable="item"]
+{
+	display:block;
+	list-style-type:none;
+	cursor: pointer; 	
+	
+	margin:0 0 2px 0;
+	padding:0.2em 0.4em;
+	
+	border-radius:0.2em;
+	border:1px solid #000;
+	
+	line-height:1.3;
+	background:#fffccc;
+}
+
+[magic-text="target"]
+{
+	float:left;
+	list-style-type:none;
+	
+	width:82%;
+	height:17.5em;
+	overflow-y:auto;
+	
+	margin:0 0.5em 0.5em 0;
+	padding:0.5em;
+	
+	border:2px solid #888;
+	border-radius:0.2em;
+	
+	background:#ddd;
+	color:#555;
+}
+

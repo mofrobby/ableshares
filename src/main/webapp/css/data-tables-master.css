@@ -1,0 +1,54 @@
+/* CSS for JQuery Data Tables: */
+html {background:none repeat scroll 0 0 #FFFFFF;color:#000000;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin:0;padding:0;}
+body {background:#fff;text-align:left;font:13px/1.231 arial,helvetica,clean,sans-serif;width:624px;padding-bottom:0;min-width:624px;height:460px;overflow:hidden;}
+
+.sorting_asc {background: url('../img/sort_asc.png') no-repeat right center;}
+.sorting_desc {background: url('../img/sort_desc.png') no-repeat right center;}
+.sorting {background: url('../img/sort_both.png') no-repeat right center;}
+.sorting_asc_disabled {background: url('../img/sort_asc_disabled.png') no-repeat right center;}
+.sorting_desc_disabled {background: url('../img/sort_desc_disabled.png') no-repeat right center;}
+
+.tablet-instructions {display: none; color: #FF0000; border-top: 1px dotted #666; font-size: 11px; margin: 5px 0; padding-top: 5px; font-style: italic;}
+@media only screen and (device-width: 768px) {.tablet-instructions {display: block;}}
+
+#dt_example {font-weight:bold;color:#333;background-color:#fff;float:left;clear:both;width:100%;}
+#dt_example h1,h2,h3,h4,h5,h6 {line-height:1.6;font-weight:700;width:100%;}
+#dt_example h1 {font-size:32px;}
+#dt_example h2 {font-size:28px;}
+#dt_example h3 {font-size:24px;}
+#dt_example h4 {font-size:20px;}
+#dt_example h5 {font-size:18px;}
+#dt_example h6 {font-size:16px;}
+
+#dt_example select {background:#EDEDED;border:1px solid #999999;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;padding:2px;}
+#dt_example select:hover {background:#F0FFFF;}
+
+#dt_example #container {background-color:#fff;float:left;clear:both;width:100%;}
+#dt_example #introtext {font-size:14px;font-weight:normal;float:left;clear:both;width:100%;margin-bottom:5px;background-color:#fff;}
+#dt_example #sourcenote {font-size:11px;font-weight:normal;float:left;clear:both;width:100%;background-color:#fff;}
+#dt_example #datatable_info {font-size:12px;color:#999;padding:5px 0;font-weight:normal;float:left;clear:left;width:50%;vertical-align:bottom;border-top:1px solid #999999;background-color:#fff;}
+#dt_example #datatable_filter {font-size:12px;color:#999;padding:5px 0;float:left;clear:right;text-align:right;font-weight:normal;width:50%;vertical-align:bottom;border-top:1px solid #999999;background-color:#fff;}
+
+#datatable_wrapper {border-top:1px solid #999999;float:left;clear:both;width:100%;background-color:#fff;}
+#datatable_wrapper table.display .right {text-align:right;}
+#datatable_wrapper table.display .left {text-align:left;}
+#datatable_wrapper table.display .center {text-align:center;}
+#datatable_wrapper table.display td.highlight {color: #A3A2A2;font-size: 35px;	padding: 6px 0 0;text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);}
+#datatable_wrapper table.display td.normaltext {color: #666;font-weight:normal;}
+#datatable_wrapper table.display td.smalltext {font-weight:normal;font-size:11px;}
+#datatable_wrapper table.display td.shadowtext {text-shadow:0 1px 1px rgba(255, 255, 255, 0.9);color: #3d3d3d;}
+#datatable_wrapper table.display th {border-bottom:1px solid #999999;font-size:11px;cursor:pointer;text-transform:uppercase;}
+
+#datatable_wrapper .dataTables_scroll {float:left;clear:both;width:100%;background-color:#fff;}
+#datatable_wrapper .dataTables_scrollHead {background-color:#fff;float:left;clear:both;width:100%;}
+#datatable_wrapper .dataTables_scrollBody {background-color:#fff;float:left;clear:both;width:100%;}
+
+#datatable_wrapper table.display {background-color:#fff;float:left;clear:both;width:100%;border-left:1px solid #DDD;}
+#datatable_wrapper table.display th, td {padding: 5px 18px 5px 5px;border-bottom: 1px solid #DDDDDD;}
+#datatable_wrapper table.display tr.odd {background-color: #FFFFFF;}
+#datatable_wrapper table.display tr.even {background-color: #DEDEDE;
+    background: -moz-linear-gradient(19% 75% 90deg, #DEDEDE, #FFFFFF) repeat scroll 0 0 transparent; /* Firefox 3.6+ */
+    background:-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DEDEDE)); /* background gradient for webkit browsers */}
+

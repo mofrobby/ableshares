@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title> OSINT Tools </title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Basic Styles -->
+		 <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	    <!-- FONTAWESOME STYLES-->
+	    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+	    <link href="../assets/css/custom.css" rel="stylesheet" />	
+		
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		
+	<style>
+	.modal.modal-wide .modal-dialog {
+  		width: 90%;
+	}
+	.modal-wide .modal-body {
+  		overflow-y: auto;
+	}
+	
+	.box {
+		  background-color: #444;
+		  color: #fff;
+		  border-radius: 5px;
+		  padding: 20px;
+		  font-size: 150%;
+		}
+		
+	.box:nth-child(even) {
+		  background-color: #ccc;
+		  color: #000;
+		}
+	
+	 .wrapper {
+        display: grid;
+    	grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+	
+	</style>
+
+
+	</head>
+	
+	
+	<body style="margin-left:24px; margin-right:24px;" onload="top.scrollTo(0,0)">
+
+		 <div class="row">
+         	<div class="col-md-12">
+        	 <h2>PAI Tools</h2>  
+        	 </div>
+        </div> 
+        <div class="alert alert-warning">
+        				<a href="#" class="close" data-dismiss="alert">&times;</a>
+        				<p>This page provides as a launch point and configuration management capability for PAI tools as well management of internal and external system connectors for service api's and data integration.</p>
+    				</div>
+	<hr/>
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+				<div class="row">
+					
+					<div class="col-sm-12">
+						
+						<div class="well well-light">
+							
+							<h4 style="margin-bottom: 20px">Preferred Tools
+							<div style="float: right; padding-right:12px"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModalHorizontal"><i class="fa fa-wrench"></i>  Manage Available Tools</a></div> 
+							
+							</h4>
+							<!-- BEGIN EVENT SOURCES -->
+							
+							<div class="wrapper">
+						        
+						            <div class="panel panel-success">
+						            	
+						                <div class="panel-heading" style="text-align: center;">
+						                    <h3 class="panel-title"><img src="../assets/img/zignal-logo-black.png" height="40px"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div class="the-price">
+						                        <h5>
+						                            <strong>Licenses in use: 125,000</strong></h5>
+						                    </div>
+											<div class="price-features">
+												<ul class="list-unstyled text-left">
+										          <li><i class="fa fa-check text-success"></i> Operational Status:<strong> Available</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Security Scan Status: <strong> Clear</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Availability (%): <strong>99.999%</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Known Issues: <strong> None</strong></li>
+										          <li><u>Description</u>: Zignal collects, enriches, visualizes broad spectrum, high fidelity PAI at scale and provides targeted alerts. Zignal uses AI/ML to analyze billions of publicly available data points in real-time, helping organizations address real-world risks.</li>       
+										        </ul>
+											</div>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:launchConTest(9);" class="btn btn-primary btn-block" role="button">Launch Application</span></a>
+						                	<div style="text-align: center;">
+						                		<a href="javascript:launchModal(9);">Edit Configuration</a>
+						                	</div>
+						                </div>
+						            </div>
+						        
+						            <div class="panel panel-success">
+						            	
+						                <div class="panel-heading" style="text-align: center;">
+						                    <h3 class="panel-title"><img src="../assets/img/DataMinrLogo.png" height="40px"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div class="the-price">
+						                        <h5>
+						                            <strong>Licenses in use: 75,000</strong></h5>
+						                    </div>
+						                    
+						                    
+											<div class="price-features">
+												<ul class="list-unstyled text-left">
+										          <li><i class="fa fa-check text-success"></i> Operational Status:<strong> Available</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Security Scan Status: <strong> Clear</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Availability (%): <strong>99.999%</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Known Issues: <strong> None</strong></li>
+										          <li><u>Description</u>: Dataminr provides real-time AI to detect events, risks, and threats from public data, providing critical information to help organizations respond to crises and manage risks across various sectors.</li>
+										        </ul>
+											</div>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:launchConTest(10);" class="btn btn-primary btn-block" role="button">Launch Application</span></a>
+						                	<div style="text-align: center;">
+						                		<a href="javascript:launchModal(10);">Edit Configuration</a>
+						                	</div>
+						                </div>
+						            </div>
+						        
+						        
+						            <div class="panel panel-success">
+						            	
+						                <div class="panel-heading" style="text-align: center;">
+						                    <h3 class="panel-title"><img src="../assets/img/recordedfuture.svg" height="40px"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div class="the-price">
+						                        <h5>
+						                            <strong>Licenses in use: 1,500</strong></h5>
+						                    </div>
+						                    
+						                    
+											<div class="price-features">
+												<ul class="list-unstyled text-left">
+										          <li><i class="fa fa-check text-success"></i> Operational Status:<strong> Available</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Security Scan Status: <strong> Clear</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Availability (%): <strong>99.72%</strong></li>
+										          <li><i class="fa fa-check text-success"></i> Known Issues: <strong> None</strong></li>
+										          <li><u>Description</u>: Recorded Future provides threat intelligence solutions, helping organizations identify, prioritize, and respond to cyber threats by analyzing data from various sources, including the open web, dark web, and technical sources.</li>
+										        </ul>
+											</div>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:launchConTest(12);" class="btn btn-primary btn-block" role="button">Launch Application</span></a>
+						                	<div style="text-align: center;">
+						                		<a href="javascript:launchModal(12);">Edit Configuration</a>
+						                	</div>
+						                </div>
+						            </div>
+						        
+							</div>
+							<!-- END EVENT SOURCES -->
+							
+							<hr>
+							
+							
+							<!-- THREAT & VULN SOURCES  -->  
+							<h4 style="margin-bottom: 20px">Data Feed Sources
+								<div style="float: right; padding-right:12px"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModalHorizontal2"><i class="fa fa-cloud-download"></i>  Add New Data Source</a></div>
+							</h4> 
+							<div class="row">
+								
+						        <div class="col-xs-12 col-sm-6 col-md-3">
+						            <div class="panel panel-primary">
+						            	
+						                <div class="panel-heading" style="text-align:center;">
+						                    <h3 class="panel-title">
+						                        <img src="/CybrEPM/assets/img/cve.png"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="float: right;">
+						                        <span class="label label-info">Data Format:  JSON</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Total Records: 113,412
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/20/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Credentials: Key
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Protocol:<span class="subscript"> RSS </span>
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                URL: https://cyber.mitre.org/cve
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Standard: OVAL
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:void(0);" class="btn btn-success" role="button" disabled>Reload</a>
+						                    NOT CONNECTED</div>
+						            </div>
+						        </div>
+						        <div class="col-xs-12 col-sm-6 col-md-3">
+						            <div class="panel panel-primary">				                
+						                
+						                <div class="panel-heading" style="text-align:center;">
+						                    <h3 class="panel-title">
+						                        <img src="/CybrEPM/assets/img/symantec.png"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="float: right;">
+						                        <span class="label label-info">Data Format:  XML</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Total Records: 89,070
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/20/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Credentials: Password
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Protocol:<span class="subscript"> https </span>
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                URL: https://symantec/security_response
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Standard: <a>Schema</a>
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:void(0);" class="btn btn-success" role="button" disabled>Reload</a>
+						                    NOT CONNECTED</div>
+						            </div>
+						        </div>		       
+						        <div class="col-xs-12 col-sm-6 col-md-3">
+						            <div class="panel panel-primary">
+						                <div class="panel-heading" style="text-align:center;">
+						                    <h3 class="panel-title">
+						                        <img src="/CybrEPM/assets/img/capec_logo.gif"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                   <div style="float: right;">
+						                        <span class="label label-info">Data Format:  XML</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Total Records: 4,185
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 03/26/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Credentials: N/A
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Protocol:<span class="subscript"> http </span>
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                URL: http://capec.mitre.org/data/
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Standard: <a>OVAL</a>
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:void(0);" class="btn btn-success" role="button" disabled>Reload</a>
+						                    NOT CONNECTED</div>
+						            </div>
+						        </div>		        
+						        <div class="col-xs-12 col-sm-6 col-md-3">
+						            <div class="panel panel-primary">
+						               <div class="panel-heading" style="text-align:center;">
+						                    <h3 class="panel-title">
+						                        <img src="/CybrEPM/assets/img/cwe.png"></h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="float: right;">
+						                        <span class="label label-info">Data Format:  XML</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Total Records: 1,004
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 04/25/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Credentials: N/A
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Protocol:<span class="subscript"> http </span>
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                URL: http://cwe.mitre.org/data/
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Standard: <a>OVAL</a>
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer text-align-center">
+						                    <a href="javascript:void(0);" class="btn btn-success" role="button" disabled>Reload</a>
+						                    NOT CONNECTED</div>
+						            </div>
+						        </div>
+						    			    	
+				    		</div>
+				
+							<hr>
+							
+							<h4 style="margin-bottom: 20px">API Service Integrations
+								<div style="float: right; padding-right:12px"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModalHorizontal2"><i class="fa fa-cloud-download"></i>  Add New API Service</a></div>
+							</h4> 
+							<div class="row">
+								
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">
+						            	
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        Active Directory</h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  Web Service</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Assets
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 04/21/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.123.41
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 21MB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 16655
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Daily
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">						                
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        CMDB</h3>
+						                </div>
+						               <div class="panel-body no-padding text-align-center">
+						                   <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  JDBC Connector</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Assets
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/20/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.124.40
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 16 MB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 8081
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Daily
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>		       
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        ServiceNow</h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                   <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  REST</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Assets
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/21/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.118.33
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 21MB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 16655
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Daily
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>		        
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        Cisco Energy Manager</h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  Web Service</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Energy
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/21/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.123.65
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 3 GB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 16655
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Weekly
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        zScalar</h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                   <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  REST</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Encryption
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 05/21/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.123.41
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 126 MB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 16655
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Daily
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>		        
+						        <div class="col-xs-12 col-sm-4 col-md-2">
+						            <div class="panel panel-info">
+						                <div class="panel-heading">
+						                    <h3 class="panel-title">
+						                        AirPatrol</h3>
+						                </div>
+						                <div class="panel-body no-padding text-align-center">
+						                    <div style="text-align:center; padding: 4px;">
+						                        <span class="label label-info">Service Type:  REST</span>
+						                    </div>
+						                    <table class="table">
+						                        <tr>
+						                            <td>
+						                                Type: Assets
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Last Update: 02/21/2018
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                IP: 10.90.123.45
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Data Size: 8GB
+						                            </td>
+						                        </tr>
+						                        <tr>
+						                            <td>
+						                                Port: 16655
+						                            </td>
+						                        </tr>
+						                        <tr class="active">
+						                            <td>
+						                                Frequency: Daily
+						                            </td>
+						                        </tr>
+						                    </table>
+						                </div>
+						                <div class="panel-footer no-padding" style="text-align: center;">
+						                    <a href="javascript:void(0);" class="btn btn-danger" role="button"><i class="fa fa-warning"></i>&nbsp;NOT CONNECTED</a>
+						                </div>
+						            </div>
+						        </div>
+						    			    			    	
+				    		</div>			
+							
+						</div>
+						
+					</div>
+					
+				</div>
+
+
+			</div>
+			<!-- END MAIN CONTENT -->
+	
+	
+<!-- BEGIN ADD CONNECTOR MODAL -->	
+<div class="modal modal-wide fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="modal_con_new" data-toggle="validator" role="form" method="POST" action="UpdateConnector.do">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Add Connector<span id="modalName"></span></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="hidden" id="conid" name="conid" value="">
+                                            <input type="hidden" id="isNew" name="isNew" value="true">
+                                            <div class="row">
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                            			<label>Connector Name</label>
+                                            			<input id="conname" name="conname" type="text" class="form-control" required>
+                                        			</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Connector Type</label>
+                                               			<select id="contype" name="contype" class="form-control">
+															
+													    		<option value="1">MySQL Database</option>
+															
+													    		<option value="2">Splunk</option>
+															
+													    		<option value="3">Microsoft Active Directory</option>
+															
+													    		<option value="4">Fire Eye</option>
+															
+													    		<option value="5">IBM BigFix</option>
+															
+													    		<option value="6">Cassandra DB</option>
+															
+													    		<option value="7">CVE</option>
+															
+													    		<option value="8">BlueCoat</option>
+															
+													    		<option value="9">CheckPoint</option>
+															
+													    		<option value="10">Symantec</option>
+															
+													    		<option value="11">CAPEC</option>
+															
+													    		<option value="12">CWE</option>
+															
+													    		<option value="13">ServiceNow</option>
+															
+													    		<option value="14">zScalar</option>
+															
+													    		<option value="15">Cisco Energy Manager</option>
+															
+													    		<option value="16">AirPatrol</option>
+															
+													    		<option value="17">Access Manager</option>
+															
+													    		<option value="18">ElasticSearch</option>
+															
+													    		<option value="19">SAP</option>
+															
+													    		<option value="20">Oracle Business Intel</option>
+															
+													    		<option value="21">Microsoft Project Server</option>
+															
+													    		<option value="22">Internal</option>
+															
+													    		<option value="23">IPAPI</option>
+															  
+		                                                </select>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                               		 	<label>Connector Category</label>
+                                                		<select id="concat" name="concat" class="form-control">
+														
+													    	<option value="1">Relational Database</option>
+														
+													    	<option value="2">Rest API</option>
+														
+													    	<option value="3">SOAP</option>
+														
+													    	<option value="4">Local Method Invocation</option>
+														
+													    	<option value="5">Remote Method Invocation</option>
+														
+													    	<option value="6">Directory</option>
+														
+													    	<option value="7">NoSQLDatabase</option>
+														
+													    	<option value="8">Script/File</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                                		<label>IP Address</label>
+                                                		<input id="conip" name="conip" class="form-control" type="text" required/>
+                                            		</div>
+						        				</div>
+						        				
+						        			</div>
+						        			<div class="row">
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					<div class="form-group">
+                                                		<label>Service URL</label>
+                                                		<input id="conurl" name="conurl" class="form-control" type="text" />
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Mapped Class</label>
+                                                		<input id="conmapped" name="conmapped" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                                		<label>Port</label>
+                                                		<input id="conport" name="conport" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        			</div>
+						        			<div class="row">
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                            			<label>Data Limit (in MBs)</label>
+                                            			<input id="conlim" name="conlim" type="text" class="form-control">
+                                        			</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Update Frequency (in mins)</label>
+                                               			<input id="confreq" name="confreq" type="text" class="form-control">
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                               		 	<label>Protocol</label>
+                                                		<select id="conprot" name="conprot" class="form-control">
+														
+													    	<option value="1">HTTP</option>
+														
+													    	<option value="2">HTTPS</option>
+														
+													    	<option value="3">SSH</option>
+														
+													    	<option value="4">FTP</option>
+														
+													    	<option value="5">FTPS</option>
+														
+													    	<option value="6">SNMP</option>
+														
+													    	<option value="7">RMI</option>
+														
+													    	<option value="8">TCP</option>
+														
+													    	<option value="9">UDP</option>
+														
+													    	<option value="10">JDBC</option>
+														
+													    	<option value="11">ODBC</option>
+														
+													    	<option value="12">IMAP</option>
+														
+													    	<option value="13">LDAP</option>
+														
+													    	<option value="14">BACnet</option>
+														
+													    	<option value="15">MIME</option>
+														
+													    	<option value="16">NFS</option>
+														
+													    	<option value="17">POP3</option>
+														
+													    	<option value="18">SMTP</option>
+														
+													    	<option value="19">SOAP</option>
+														
+													    	<option value="20">Telnet</option>
+														
+													    	<option value="21">Internal</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                               		 	<label>Source Type</label>
+                                                		<select id="consrc" name="consrc" class="form-control">
+														
+													    	<option value="1">Event Source</option>
+														
+													    	<option value="2">Threat and Vulnerability</option>
+														
+													    	<option value="3">Correlation Data</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				
+						        			</div>
+                                            <div class="row">
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					 <div class="form-group">
+                                                		<label>User Name</label>
+                                                		<input id="conuser" name="conuser" class="form-control"  type="text" />
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					 <div class="form-group">
+                                                		<label>Password</label>
+                                                		<input id="conpass" name="conpass" class="form-control"  type="password" />
+                                            		</div>
+						        				</div>
+						        			</div>
+                                             <div class="form-group">
+                                                <label>Script / Query</label>
+                                                <textarea class="form-control" id="conscript" name="conscript" rows="2"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Parameters</label>
+                                                <textarea class="form-control" id="conparams" name="conparams" rows="2"></textarea>
+                                            </div>
+                                             <div class="form-group">
+                                                <label>Comments</label>
+                                                <textarea class="form-control" id="concom" name="concom" rows="2"></textarea>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" id="modalSave" class="btn btn-primary">Add Connector</button>
+                                        </div>
+                                        </form>
+        </div>
+    </div>
+</div>
+<!-- END ADD CONNECTOR MODAL -->	
+
+
+<!-- Threat Modal -->
+<div class="modal fade" id="myModalHorizontal2" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Add A Data Source
+                </h4>
+            </div>
+            
+            <!-- Threat Modal Body -->
+            <div class="modal-body">
+                <p>Please select the type of data source you want to connect:</p>
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Data Source</label>
+                    <div class="col-sm-10">
+                        <select class="form-control">
+                        						<option>CVE</option>
+                        						<option>CheckPoint</option>
+                        						<option>Database: Oracle</option>
+                                                <option>Database: MySQL</option>
+                                                <option>Database: SQLServer</option>
+                                                <option>Database: DB2</option>
+                                                <option>Database: Other</option>
+                        						<option>FireEye</option>
+                                                <option>Splunk</option>
+                                                <option>Tenable</option>                                                
+                                                <option>Log File</option>
+                                            </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control"
+                            id="inputPassword3" placeholder="Partner Name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >User Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control"
+                            id="inputPassword3" placeholder="Partner Name"/>
+                    </div>
+                  </div>      
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Password</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control"
+                            id="inputPassword3" placeholder="Partner Name"/>
+                    </div>
+                  </div>     
+                </form>              
+            </div>            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BEGIN CONNECTOR CONFIG MODAL -->	
+<div class="modal modal-wide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    	<form id="modal_con" data-toggle="validator" role="form" method="POST" action="UpdateConnector.do">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Connector Configuration <span id="modalName" style="text-align:right"></span></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="hidden" id="modal0" name="conid">
+                                            <input type="hidden" id="isNew" name="isNew" value="false">
+                                            <div class="row">
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                            			<label>Connector Name</label>
+                                            			<input id="modal1" name="conname" type="text" class="form-control" value="">
+                                        			</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Connector Type</label>
+                                               			<select id="modal15" name="contype" class="form-control">
+															
+													    		<option value="1">MySQL Database</option>
+															
+													    		<option value="2">Splunk</option>
+															
+													    		<option value="3">Microsoft Active Directory</option>
+															
+													    		<option value="4">Fire Eye</option>
+															
+													    		<option value="5">IBM BigFix</option>
+															
+													    		<option value="6">Cassandra DB</option>
+															
+													    		<option value="7">CVE</option>
+															
+													    		<option value="8">BlueCoat</option>
+															
+													    		<option value="9">CheckPoint</option>
+															
+													    		<option value="10">Symantec</option>
+															
+													    		<option value="11">CAPEC</option>
+															
+													    		<option value="12">CWE</option>
+															
+													    		<option value="13">ServiceNow</option>
+															
+													    		<option value="14">zScalar</option>
+															
+													    		<option value="15">Cisco Energy Manager</option>
+															
+													    		<option value="16">AirPatrol</option>
+															
+													    		<option value="17">Access Manager</option>
+															
+													    		<option value="18">ElasticSearch</option>
+															
+													    		<option value="19">SAP</option>
+															
+													    		<option value="20">Oracle Business Intel</option>
+															
+													    		<option value="21">Microsoft Project Server</option>
+															
+													    		<option value="22">Internal</option>
+															
+													    		<option value="23">IPAPI</option>
+															  
+		                                                </select>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                               		 	<label>Connector Category</label>
+                                                		<select id="modal16" name="concat" class="form-control">
+														
+													    	<option value="1">Relational Database</option>
+														
+													    	<option value="2">Rest API</option>
+														
+													    	<option value="3">SOAP</option>
+														
+													    	<option value="4">Local Method Invocation</option>
+														
+													    	<option value="5">Remote Method Invocation</option>
+														
+													    	<option value="6">Directory</option>
+														
+													    	<option value="7">NoSQLDatabase</option>
+														
+													    	<option value="8">Script/File</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                                		<label>IP Address</label>
+                                                		<input id="modal4" name="conip" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        				
+						        			</div>
+						        			<div class="row">
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					<div class="form-group">
+                                                		<label>Service URL</label>
+                                                		<input id="modal3" name="conurl" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Mapped Class</label>
+                                                		<input id="modal23" name="conmapped" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                                		<label>Port</label>
+                                                		<input id="modal7" name="conport" class="form-control" type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        			</div>
+						        			<div class="row">
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                            			<label>Data Limit (in MBs)</label>
+                                            			<input id="modal2" name="conlim" type="text" class="form-control" value="">
+                                        			</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                                		<label>Update Frequency (in mins)</label>
+                                               			<input id="modal6" name="confreq" type="text" class="form-control" value="">
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					<div class="form-group">
+                                               		 	<label>Protocol</label>
+                                                		<select id="modal17" name="conprot" class="form-control">
+														
+													    	<option value="1">HTTP</option>
+														
+													    	<option value="2">HTTPS</option>
+														
+													    	<option value="3">SSH</option>
+														
+													    	<option value="4">FTP</option>
+														
+													    	<option value="5">FTPS</option>
+														
+													    	<option value="6">SNMP</option>
+														
+													    	<option value="7">RMI</option>
+														
+													    	<option value="8">TCP</option>
+														
+													    	<option value="9">UDP</option>
+														
+													    	<option value="10">JDBC</option>
+														
+													    	<option value="11">ODBC</option>
+														
+													    	<option value="12">IMAP</option>
+														
+													    	<option value="13">LDAP</option>
+														
+													    	<option value="14">BACnet</option>
+														
+													    	<option value="15">MIME</option>
+														
+													    	<option value="16">NFS</option>
+														
+													    	<option value="17">POP3</option>
+														
+													    	<option value="18">SMTP</option>
+														
+													    	<option value="19">SOAP</option>
+														
+													    	<option value="20">Telnet</option>
+														
+													    	<option value="21">Internal</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-6 col-md-3">
+						        					 <div class="form-group">
+                                               		 	<label>Source Type</label>
+                                                		<select id="modal18" name="consrc" class="form-control">
+														
+													    	<option value="1">Event Source</option>
+														
+													    	<option value="2">Threat and Vulnerability</option>
+														
+													    	<option value="3">Correlation Data</option>
+														 
+                                                		</select>
+                                           			 </div>
+						        				</div>
+						        				
+						        			</div>
+                                            <div class="row">
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					 <div class="form-group">
+                                                		<label>User Name</label>
+                                                		<input id="modal11" name="conuser" class="form-control"  type="text" value=""/>
+                                            		</div>
+						        				</div>
+						        				<div class="col-xs-12 col-sm-12 col-md-6">
+						        					 <div class="form-group">
+                                                		<label>Password</label>
+                                                		<input id="modal12" name="conpass" class="form-control"  type="password" value=""/>
+                                            		</div>
+						        				</div>
+						        			</div>
+                                             <div class="form-group">
+                                                <label>Script / Query</label>
+                                                <textarea class="form-control" id="modal14" name="conscript" rows="2"></textarea>
+                                            </div>
+                                             <div class="form-group">
+                                                <label>Parameters</label>
+                                                <textarea class="form-control" id="modal22" name="conparams" rows="2"></textarea>
+                                            </div>
+                                             <div class="form-group">
+                                                <label>Comments</label>
+                                                <textarea class="form-control" id="modal8" name="concom" rows="2"></textarea>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="submit" id="modalSave" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>	
+                            
+         <!-- END CONNECTOR CONFIG MODAL -->	                   
+                            
+         <!-- BEGIN CONNECTOR TEST MODAL -->                   
+        <div class="modal fade" id="connect_test" tabindex="-1" role="dialog" aria-labelledby="connect_testLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="connect_testLabel">Connector Test <span id="modalName"></span></h4>
+                                        </div>
+                                        <div class="modal-body">	
+                                        	<iframe id="modaliframe" src="" style="height:400px; width:550px;"></iframe>
+                                        </div>
+                                       </div>
+                                 </div>
+        </div>
+        <!-- END CONNECTOR TEST MODAL -->
+        
+        
+		<!-- END MAIN PANEL -->
+
+
+		<!--================================================== -->		
+		
+		
+<script src="../assets/js/jquery-3.3.1.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/validator.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+
+		
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+	var xmlRequest;
+    if (window.XMLHttpRequest) { // if Mozilla, IE7, Safari etc
+        //alert("HTTP");
+        xmlRequest = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) { // if IE6 or below
+        try {
+            xmlRequest = new ActiveXObject("Msxml2.XMLHTTP")
+            //alert("Msxml2.XMLHTTP");
+        }
+        catch (e) {
+            try {
+                xmlRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                //	alert("Microsoft.XMLHTTP");
+            }
+            catch (e) {
+                alert("You do not have a compatible browser to use this page.\r Use IE 6.0 or greater for best results.");
+            }
+        }
+    }
+    else
+        alert("You do not have a compatible browser to use this page.\r Use IE 6.0 or greater for best results.");
+		
+		
+		
+		
+		$(document).ready(function() {
+			
+			
+			$(".modal-wide").on("show.bs.modal", function() {
+				  var height = $(window).height() - 200;
+				  $(this).find(".modal-body").css("max-height", height);
+				});
+		
+		})
+		
+		function launchModal(str){
+			
+			loadConnectorData(str);	
+      	
+      	}
+		
+		function launchConTest(str){
+			
+			document.getElementById('modaliframe').src = 'ConnectorVerification.jsp?id='+str;
+			$('#connect_test').modal('show');
+          	document.getElementById('heading').focus();	
+      	
+      	}
+		
+		function loadConnectorData(arg) {
+	    	//alert(arg);
+	    	if(arg != 0){
+	    		var url = "../Ajax/ConnectorLoad.jsp";
+	    		url += "?id=" + arg;
+	    		//alert("URL "+url)	
+	    		xmlRequest.onreadystatechange = stateChange;
+	    		xmlRequest.open("GET", url, true);
+	    		xmlRequest.send(null);
+	    		Response.AddHeader("Cache-Control", "no-cache");		
+	    	}
+	    	
+	    }
+
+	    function stateChange() {
+	    	if (xmlRequest.readyState == 4 || xmlRequest.readyState == "complete") {
+	    		//alert('calling stuff ');
+	    		//alert(xmlRequest.responseText);
+	    		//document.getElementById('UserInfoArea').innerHTML = xmlRequest.responseText
+	    		//var nam = "#feature"+ sel;
+	    		var caps = xmlRequest.responseText; 
+	    		//alert(caps);
+	    		var fields = caps.split('|');
+	    		//alert(fields[0])
+	    		var con_id = document.getElementById('modal0');
+	    		con_id.value = fields[0];
+	    		//alert(fields[0]);
+	    		
+	    		var con_name = document.getElementById('modal1');
+	    		con_name.value = fields[1];
+	    		var con_url = document.getElementById('modal3');
+	    		con_url.value = fields[3];
+	    		var con_ip = document.getElementById('modal4');
+	    		con_ip.value = fields[4];
+	    		var con_port = document.getElementById('modal7');
+	    		con_port.value = fields[7];
+	    		var con_comments = document.getElementById('modal8');
+	    		con_comments.value = fields[8];
+	    		var con_uname = document.getElementById('modal11');
+	    		con_uname.value = fields[11];
+	    		var con_pword = document.getElementById('modal12');
+	    		con_pword.value = fields[12];
+	    		var con_script = document.getElementById('modal14');
+	    		con_script.value = fields[14];
+	    		
+	    		var con_datalim = document.getElementById('modal2');
+	    		con_datalim.value = fields[2];
+	    		var con_freq = document.getElementById('modal6');
+	    		con_freq.value = fields[6];
+	    		var con_mapped = document.getElementById('modal23');
+	    		con_mapped.value = fields[23];
+	    		//alert('conmapped '+con_mapped.value)
+	    		
+	    		var con_params = document.getElementById('modal22');
+	    		con_params.value = fields[22];
+	    		//alert('con_params '+con_params.value)
+	    		setSelectedIndex(document.getElementById('modal15'), fields[15]);
+	    		setSelectedIndex(document.getElementById('modal16'), fields[16]);
+	    		setSelectedIndex(document.getElementById('modal17'), fields[17]);
+	    		setSelectedIndex(document.getElementById('modal18'), fields[18]);
+	    		
+	    		
+	    		$('#myModal').modal('show');
+	          	document.getElementById('heading').focus();
+	    		
+	    		//var str = fields[i];
+	    		    //alert('str '+str)
+	    		  //  if (str != null){
+	    		    //	var str2 = str.replace(/\s+/g,"");
+	    		    	//alert('str2 ' +str2)
+	    		    //	if(str2.length > 1){
+	    		    	//	var fields2 = str.split('|');
+	    		    	//	opt.value = fields2[0];
+	    		    		//alert(fields2[0]+" id");
+	    		    	//	opt.innerHTML = fields2[1];
+	    		    		//sel.appendChild(opt);
+	    		    	//}
+	    		   // }
+	    		}
+	    	}
+	    
+	    function setSelectedIndex(s, v) {
+	        for ( var i = 0; i < s.options.length; i++ ) {
+	            if ( s.options[i].value == v ) {
+	                s.options[i].selected = true;
+	                return;
+	            }
+	        }
+	    }
+	    
+	    function closeModalFromChild(){
+	    	$('#connect_test').modal('hide');
+	    }
+	    
+		</script>
+
+		
+
+	</body>
+
+</html>

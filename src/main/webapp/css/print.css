@@ -1,0 +1,11 @@
+@media print{@page {size: landscape}}
+
+@media print body{
+	font-family:"Palatino Linotype"; "Book Antiqua", Palatino, serif;
+	font-size: 1em;
+	color: #333333;
+	margin-top: 2cm;
+	margin-right: 2cm;
+	margin-bottom: 1.5cm;
+	margin-left:2cm
+}

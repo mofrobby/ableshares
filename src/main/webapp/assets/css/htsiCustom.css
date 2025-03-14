@@ -1,0 +1,107 @@
+
+.nav-1-level li,
+.nav-2-level li,
+.nav-3-level li,
+.nav-4-level li,
+.nav-5-level li,
+.nav-6-level li {
+    border-bottom: none !important;
+}
+
+.nav-1-level li a {
+    padding-left: 37px;
+}
+
+.nav-2-level li a {
+    padding-left: 55px;
+}
+
+.nav-3-level li a {
+    padding-left: 73px;
+}
+
+.nav-4-level li a {
+    padding-left: 91px;
+}
+
+.nav-5-level li a {
+    padding-left: 109px;
+}
+
+.nav-6-level li a {
+    padding-left: 127px;
+}
+
+.nav-1-level > li > a:before ,
+.nav-2-level > li > a:before ,
+.nav-3-level > li > a:before ,
+.nav-4-level > li > a:before ,
+.nav-5-level > li > a:before ,
+.nav-6-level > li > a:before {
+	content:"";
+	display:block;
+	position:absolute;
+	left:20px;
+	width:15px;
+	height:1px;
+	background:#ff0000;
+	top:20px;
+}
+
+.nav-1-level > li > a:after,
+.nav-2-level > li > a:after,
+.nav-3-level > li > a:after,
+.nav-4-level > li > a:after,
+.nav-5-level > li > a:after,
+.nav-6-level > li > a:after {
+	content:"";
+	display:block;
+	position:absolute;
+	left:20px;
+	width:1px;
+	height:100%;
+	background:#ff0000;
+	top:0px;
+	z-index:10;
+}
+
+.nav-1-level  > li:last-child > a:after,
+.nav-2-level  > li:last-child > a:after,
+.nav-3-level  > li:last-child > a:after,
+.nav-4-level  > li:last-child > a:after,
+.nav-5-level  > li:last-child > a:after,
+.nav-6-level  > li:last-child > a:after {
+	height:50%;
+}
+
+.nav-2-level > li > a:after,
+.nav-2-level > li > a:before  {
+	left:40px;
+}
+
+.nav-3-level > li > a:after,
+.nav-3-level > li > a:before  {
+	left:58px;
+}
+
+.nav-4-level > li > a:after,
+.nav-4-level > li > a:before  {
+	left:66px;
+}
+
+.nav-5-level > li > a:after,
+.nav-5-level > li > a:before  {
+	left:84px;
+}
+
+.nav-6-level > li > a:after,
+.nav-6-level > li > a:before  {
+	left:102px;
+}
+
+
+
+
+
+
+
